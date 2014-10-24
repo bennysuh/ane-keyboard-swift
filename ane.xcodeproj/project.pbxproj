@@ -13,6 +13,9 @@
 		CE98570719C9B46900312E8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE98570619C9B46900312E8B /* Images.xcassets */; };
 		CE98570A19C9B46900312E8B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE98570819C9B46900312E8B /* LaunchScreen.xib */; };
 		CE98571619C9B46900312E8B /* aneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98571519C9B46900312E8B /* aneTests.swift */; };
+		CE98572819C9B52900312E8B /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98572719C9B52900312E8B /* KeyboardViewController.swift */; };
+		CE98572B19C9B52900312E8B /* AneKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CE98572319C9B52900312E8B /* AneKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE98573319C9B65100312E8B /* AneKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE98573219C9B65100312E8B /* AneKeyboard.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +26,35 @@
 			remoteGlobalIDString = CE9856F919C9B46800312E8B;
 			remoteInfo = ane;
 		};
+		CE98572919C9B52900312E8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9856F219C9B46800312E8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE98572219C9B52900312E8B;
+			remoteInfo = AneKeyboard;
+		};
+		CE98572C19C9B52900312E8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9856F219C9B46800312E8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE98572219C9B52900312E8B;
+			remoteInfo = AneKeyboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE98573119C9B52900312E8B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CE98572B19C9B52900312E8B /* AneKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CE9856FA19C9B46800312E8B /* ane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ane.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +67,10 @@
 		CE98570F19C9B46900312E8B /* aneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE98571419C9B46900312E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE98571519C9B46900312E8B /* aneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aneTests.swift; sourceTree = "<group>"; };
+		CE98572319C9B52900312E8B /* AneKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AneKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE98572619C9B52900312E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE98572719C9B52900312E8B /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		CE98573219C9B65100312E8B /* AneKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AneKeyboard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +88,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE98572019C9B52900312E8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +103,7 @@
 			children = (
 				CE9856FC19C9B46800312E8B /* ane */,
 				CE98571219C9B46900312E8B /* aneTests */,
+				CE98572419C9B52900312E8B /* AneKeyboard */,
 				CE9856FB19C9B46800312E8B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +113,7 @@
 			children = (
 				CE9856FA19C9B46800312E8B /* ane.app */,
 				CE98570F19C9B46900312E8B /* aneTests.xctest */,
+				CE98572319C9B52900312E8B /* AneKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +156,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CE98572419C9B52900312E8B /* AneKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CE98572719C9B52900312E8B /* KeyboardViewController.swift */,
+				CE98572519C9B52900312E8B /* Supporting Files */,
+				CE98573219C9B65100312E8B /* AneKeyboard.xib */,
+			);
+			path = AneKeyboard;
+			sourceTree = "<group>";
+		};
+		CE98572519C9B52900312E8B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE98572619C9B52900312E8B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +184,13 @@
 				CE9856F619C9B46800312E8B /* Sources */,
 				CE9856F719C9B46800312E8B /* Frameworks */,
 				CE9856F819C9B46800312E8B /* Resources */,
+				CE98573119C9B52900312E8B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CE98572A19C9B52900312E8B /* PBXTargetDependency */,
+				CE98572D19C9B52900312E8B /* PBXTargetDependency */,
 			);
 			name = ane;
 			productName = ane;
@@ -150,6 +215,23 @@
 			productReference = CE98570F19C9B46900312E8B /* aneTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CE98572219C9B52900312E8B /* AneKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE98572E19C9B52900312E8B /* Build configuration list for PBXNativeTarget "AneKeyboard" */;
+			buildPhases = (
+				CE98571F19C9B52900312E8B /* Sources */,
+				CE98572019C9B52900312E8B /* Frameworks */,
+				CE98572119C9B52900312E8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AneKeyboard;
+			productName = AneKeyboard;
+			productReference = CE98572319C9B52900312E8B /* AneKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +247,9 @@
 					CE98570E19C9B46900312E8B = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = CE9856F919C9B46800312E8B;
+					};
+					CE98572219C9B52900312E8B = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -183,6 +268,7 @@
 			targets = (
 				CE9856F919C9B46800312E8B /* ane */,
 				CE98570E19C9B46900312E8B /* aneTests */,
+				CE98572219C9B52900312E8B /* AneKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +288,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE98572119C9B52900312E8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE98573319C9B65100312E8B /* AneKeyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +319,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE98571F19C9B52900312E8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE98572819C9B52900312E8B /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +334,16 @@
 			isa = PBXTargetDependency;
 			target = CE9856F919C9B46800312E8B /* ane */;
 			targetProxy = CE98571019C9B46900312E8B /* PBXContainerItemProxy */;
+		};
+		CE98572A19C9B52900312E8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE98572219C9B52900312E8B /* AneKeyboard */;
+			targetProxy = CE98572919C9B52900312E8B /* PBXContainerItemProxy */;
+		};
+		CE98572D19C9B52900312E8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE98572219C9B52900312E8B /* AneKeyboard */;
+			targetProxy = CE98572C19C9B52900312E8B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -386,6 +498,30 @@
 			};
 			name = Release;
 		};
+		CE98572F19C9B52900312E8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AneKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CE98573019C9B52900312E8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AneKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,6 +547,14 @@
 			buildConfigurations = (
 				CE98571D19C9B46900312E8B /* Debug */,
 				CE98571E19C9B46900312E8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE98572E19C9B52900312E8B /* Build configuration list for PBXNativeTarget "AneKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE98572F19C9B52900312E8B /* Debug */,
+				CE98573019C9B52900312E8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
